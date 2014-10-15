@@ -3,7 +3,7 @@ Macbookpro-manjaro-postinstall
 post installation actions after installing manjaro kde in a macbookpro 9.1
 
 
-#grub + refind
+## grub + refind
 i dont know why but my grub bootloader fail in some way on install
 i used this page to make it work with refind
 
@@ -23,14 +23,52 @@ my partition table was like this
 /dev/sda8: LABEL="Manjaro" TYPE="ext4"
 /dev/sda9: TYPE="swap"
 ```
+## data
+edit /etc/fstab to mount /dev/sda4 on /mnt/data on startup
+replace all home folders with aliases pointing to /mnt/data/bachir/*
 
-#gpg encrypting key
+## gpg encrypting key
 setup a gpg encripting key to be able to use kwallet
 https://wiki.archlinux.org/index.php/GnuPG
 
-#keyboard
-xmodmap
+## basique softwares
+```
+sudo pacman -S vim chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla 
+```
 
-#bluetooth
-bluez
+## konsole
+http://abdussamad.com/archives/503-Changing-Konsole-colors-in-KDE.html
 
+## vim
+https://wiki.archlinux.org/index.php/Vim/.vimrc
+
+## owncloud
+yaourt -S owncloud-client
+
+## dropbox
+yaourt -S dropbox
+
+## LAMP
+https://wiki.archlinux.org/index.php/LAMP
+```
+sudo pacman -S apache
+```
+configure root/directory, vhosts, etc
+
+```
+sudo pacman -S php php-apache
+```
+had to edit /etc/php/php.ini to add my specifique root directory in open_base_dir
+http://kb.mediatemple.net/questions/514/How+do+I+set+the+path+for+open_basedir%3F#gs
+
+## drush
+yaourt -S drush
+
+## keyboard
+https://wiki.archlinux.org/index.php/Apple_Keyboard
+https://wiki.manjaro.org/index.php/Keyboard_Layout
+
+## bluetooth
+... bluez ...
+
+## mysql backup cron
