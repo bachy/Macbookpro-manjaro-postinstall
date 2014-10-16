@@ -1,0 +1,67 @@
+  1 Section "InputClass" 
+  2         Identifier "touchpad" 
+  3         Driver "synaptics" 
+  4         MatchIsTouchpad "on" 
+  5         Option "TapButton1" "1" 
+  6         Option "TapButton2" "2" 
+  7         Option "TapButton3" "3" 
+  8         Option "VertEdgeScroll" "on" 
+  9         Option "VertTwoFingerScroll" "on" 
+ 10         Option "HorizEdgeScroll" "on" 
+ 11         Option "HorizTwoFingerScroll" "on" 
+ 12         #Option "CircularScrolling" "on" 
+ 13         #Option "CircScrollTrigger" "2" 
+ 14         #Option "EmulateTwoFingerMinZ" "40" 
+ 15         #Option "EmulateTwoFingerMinW" "8" 
+ 16         Option "CoastingSpeed" "2" 
+ 17         Option "FingerLow" "35" 
+ 18         Option "FingerHigh" "40" 
+ 19 EndSection
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+~                                                                                                                   
+-- VISUEL --                                                                            19        1,1          Tout

@@ -66,7 +66,7 @@ Section "InputClass"
 	Option "MaxTapTime" "180"
 	Option "MaxTapMove" "535"
 	Option "LockedDrag" "1"
-	Option "LockedDragTimeout" "600"
+	Option "LockedDragTimeout" "250"
 EndSection
 ```
 
@@ -102,10 +102,13 @@ dont try workbench-mysql, it took ages to build and finaly i dont see the utilit
 install as usual phpmyadmin instead !! https://wiki.archlinux.org/index.php/PhpMyAdmin
 
 ### mysql backup cron
-
+TODO
 
 ## drush
 ```yaourt -S drush```
 
 ## haroopad
 ```yaourt -s haroopad```
+
+## sublimetext 3 (dev)
+```yaourt -S sublime-text-dev```
