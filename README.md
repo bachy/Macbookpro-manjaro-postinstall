@@ -1,11 +1,11 @@
-Macbookpro-manjaro-postinstall
+Macbookpro manjaro postinstall
 ==============================
 post installation actions after installing manjaro kde in a macbookpro 9.1
 
 
 ## grub + refind
-i dont know why but my grub bootloader fail in some way on install
-i used this page to make it work with refind
+I dont know why but my grub bootloader failed in some way on install
+I used this page to make it work with refind
 
 https://wiki.manjaro.org/index.php/Restore_the_GRUB_Bootloader
 
@@ -36,6 +36,43 @@ https://wiki.archlinux.org/index.php/GnuPG
 sudo pacman -S vim chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla 
 ```
 
+## keyboard
+https://wiki.archlinux.org/index.php/Apple_Keyboard
+https://wiki.manjaro.org/index.php/Keyboard_Layout
+
+## trackpad
+https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Installation
+
+my config on /etc/X11/xorg.conf.d/50-my-synaptics.conf
+```
+Section "InputClass"
+	Identifier "touchpad"
+	Driver "synaptics"
+	MatchIsTouchpad "on"
+	Option "TapButton1" "1"
+	Option "TapButton2" "2"
+	Option "TapButton3" "3"
+	Option "VertEdgeScroll" "on"
+	Option "VertTwoFingerScroll" "on"
+	Option "HorizEdgeScroll" "on"
+	Option "HorizTwoFingerScroll" "on"
+	#Option "CircularScrolling" "on"
+	#Option "CircScrollTrigger" "2"
+	#Option "EmulateTwoFingerMinZ" "40"
+	#Option "EmulateTwoFingerMinW" "8"
+	Option "CoastingSpeed" "2"
+	Option "FingerLow" "35"
+	Option "FingerHigh" "40"
+	Option "MaxTapTime" "80"
+	Option "MaxTapMove" "30"
+	Option "LockedDrag" "1"
+	Option "LockedDragTimeout" "600"
+EndSection
+```
+
+## bluetooth
+... bluez ...
+
 ## konsole
 http://abdussamad.com/archives/503-Changing-Konsole-colors-in-KDE.html
 
@@ -43,32 +80,32 @@ http://abdussamad.com/archives/503-Changing-Konsole-colors-in-KDE.html
 https://wiki.archlinux.org/index.php/Vim/.vimrc
 
 ## owncloud
-yaourt -S owncloud-client
+```yaourt -S owncloud-client```
 
 ## dropbox
-yaourt -S dropbox
+```yaourt -S dropbox```
 
 ## LAMP
-https://wiki.archlinux.org/index.php/LAMP
-```
-sudo pacman -S apache
-```
-configure root/directory, vhosts, etc
 
-```
-sudo pacman -S php php-apache
-```
+### Apache
+https://wiki.archlinux.org/index.php/LAMP
+```sudo pacman -S apache```
+then configure root/directory, vhosts, etc
+
+### PHP
+```sudo pacman -S php php-apache```
 had to edit /etc/php/php.ini to add my specifique root directory in open_base_dir
 http://kb.mediatemple.net/questions/514/How+do+I+set+the+path+for+open_basedir%3F#gs
 
+### Mysql
+dont try workbench-mysql, it took ages to build and finaly i dont see the utility for me
+install as usual phpmyadmin instead !! https://wiki.archlinux.org/index.php/PhpMyAdmin
+
+### mysql backup cron
+
+
 ## drush
-yaourt -S drush
+```yaourt -S drush```
 
-## keyboard
-https://wiki.archlinux.org/index.php/Apple_Keyboard
-https://wiki.manjaro.org/index.php/Keyboard_Layout
-
-## bluetooth
-... bluez ...
-
-## mysql backup cron
+## haroopad
+```yaourt -s haroopad```
