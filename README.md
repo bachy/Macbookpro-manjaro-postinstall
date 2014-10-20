@@ -1,7 +1,6 @@
-Macbookpro manjaro postinstall
-==============================
-post installation actions after installing manjaro kde in a macbookpro 9.1
+#Macbookpro manjaro postinstall
 
+post installation actions after installing manjaro kde in a macbookpro 9.1
 
 ## grub + refind
 I dont know why but my grub bootloader failed in some way on install
@@ -35,7 +34,6 @@ https://wiki.archlinux.org/index.php/GnuPG
 ```
 sudo pacman -S vim chromiun firefox firefox-firebug firefox-adblock-plus synapse zeitgeist filezilla 
 ```
-
 ## keyboard
 https://wiki.archlinux.org/index.php/Apple_Keyboard
 https://wiki.manjaro.org/index.php/Keyboard_Layout
@@ -86,10 +84,11 @@ https://wiki.archlinux.org/index.php/Vim/.vimrc
 ```yaourt -S dropbox```
 
 ## LAMP
+https://wiki.archlinux.org/index.php/LAMP
 
 ### Apache
-https://wiki.archlinux.org/index.php/LAMP
 ```sudo pacman -S apache```
+
 then configure root/directory, vhosts, etc
 
 ### PHP
@@ -100,9 +99,14 @@ http://kb.mediatemple.net/questions/514/How+do+I+set+the+path+for+open_basedir%3
 ### Mysql
 dont try workbench-mysql, it took ages to build and finaly i dont see the utility for me
 install as usual phpmyadmin instead !! https://wiki.archlinux.org/index.php/PhpMyAdmin
+mysql logs (not working for me) : http://www.pontikis.net/blog/how-and-when-to-enable-mysql-logs
+edit the max_allowed_packet property to avoid the 2006 error
 
 ### mysql backup cron
 TODO
+
+### drupal
+https://wiki.archlinux.org/index.php/Drupal
 
 ## drush
 ```yaourt -S drush```
@@ -112,3 +116,9 @@ TODO
 
 ## sublimetext 3 (dev)
 ```yaourt -S sublime-text-dev```
+then install package control
+
+## backitime
+```yaourt -S backintime-kde4```
+then configure backups
+
